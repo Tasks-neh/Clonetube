@@ -1,0 +1,18 @@
+<main class="container container-md">
+    <div class="container-fluid">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+    </div>
+  
+  </main>
+  <br>
+
+  <div class="card-group row" *ngFor="let element of data">
+    <div class="col-sm-12 col-lg-12 mb-4 " style="position:relative; left: 0%; top: 0px;">
+  
+      <app-card [objcard]="element"></app-card>
+    </div>
+  
+  </div>

@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { Objcard } from './model';
+import { Component, OnInit } from '@angular/core';
+import { Objcard } from '../model';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  title = 'Clonetube';
+export class HomeComponent  {
   data:Array<Objcard>=[
     {
       name: 'hello',
@@ -36,3 +35,8 @@ export class AppComponent {
   }
   
 }
+
+  
+
+  
+
